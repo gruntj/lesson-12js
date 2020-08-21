@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MAGIC BALL</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+
+
+	
+<script>
+	
+
+var randomeWords = [
+"Да",
+"Нет",
+"Ответ не ясен",
+"Спроси позже",
+"Предрешено",
+" Определенно ДА",
+"Перспективы не очень хорошие",
+"Мой ответ - нет",
+"Даже не думай",
+"Знаки говорят - ДА",
+"Пока не ясно, попробуй снова",
+"сейчас нельзя предсказать",
+"Знаки говорят - ДА",
+"Бесспорно",
+"Мой ответ - нет",
+" Хорошие перспективы",
+"Лучше не рассказывать",
+];
+
+var words = Math.floor(Math.random()*17);
+randomeWords[words];
+
+
+
+
+document.querySelector("body").innerHTML = "<div class =\" ball\"><img id =\"ball\" src= \" Magic_eight_ball.png\"><p >Shake me</p><inpu onclick = \"onckl()\" type=\"button\" value=\"Shake me\" class =\"Shake\"></div>";
+
+
+var ball = document.querySelector("#ball").classList.add("ball");
+
+
+function onckl(){
+document.querySelector("p").innerText = randomeWords[words];
+
+}
+
+
+
+
+</script>
+</body>
+</html>
